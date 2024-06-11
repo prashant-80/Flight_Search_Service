@@ -1,11 +1,9 @@
 const express  = require('express');
 const { ServerConfig } = require('./config');
-const homeRoute = require('./routes');
 const apiRoutes = require('./routes');
 const app = express();
 const path = require('path');
 const staticRoute = require('./routes/v1/static-routes');
-
 
 
 app.use(express.json());   //help to parse the incoming request body 
